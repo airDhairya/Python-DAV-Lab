@@ -1,0 +1,20 @@
+l = []
+
+n = int(input("Enter number of elements: "))
+for i in range(n):
+    num = int(input())
+    l.append(num)
+
+nu = int(input("Enter element for count: "))
+
+count = l.count(nu)
+large = max(l)
+minimum = min(l)
+S = sum(l)
+a = S / n
+
+print("Max:", large)
+print("Min:", minimum)
+print("Sum:", S)
+print("Average:", a)
+print(nu, "count:", count)
