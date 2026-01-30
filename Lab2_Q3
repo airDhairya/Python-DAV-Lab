@@ -1,0 +1,25 @@
+d = {}
+
+n = int(input("Enter element no: "))
+for i in range(n):
+    year = int(input("Year: "))
+    winner = input("Winner: ")
+    d[year] = winner
+
+wc = 0
+best = ""
+
+for i in d.keys():
+    winner = d[i]
+    count = list(d.values()).count(winner)
+    if wc < count:
+        wc = count
+        best = winner
+
+print("Best:", best)
+print(wc)
+
+countries = set(d.values())
+print("Unique values:")
+for i in countries:
+    print(i)
