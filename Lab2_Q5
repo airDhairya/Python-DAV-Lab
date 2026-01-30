@@ -1,0 +1,12 @@
+sent = input("Sentence: ")
+words = sent.split()
+
+wSet = set(words)
+countD = {}
+
+for i in wSet:
+    count = words.count(i)
+    countD[i] = count
+
+for i in countD.keys():
+    print(i, "occurred", countD[i])
