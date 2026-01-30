@@ -1,0 +1,29 @@
+import numpy as np
+
+A = np.random.randint(1, 10, (3, 3))
+B = np.random.randint(1, 10, (3, 3))
+
+print("A:\n", A)
+print("B:\n", B)
+
+print("Addition:\n", A + B)
+print("Subtraction:\n", A - B)
+
+print("Element-wise Multiplication:\n", A * B)
+print("Dot Product:\n", A.dot(B))
+
+print("A Transpose:\n", A.T)
+print("B Transpose:\n", B.T)
+
+print("Determinant of A:", np.linalg.det(A))
+print("Determinant of B:", np.linalg.det(B))
+
+if np.linalg.det(A) != 0:
+    print("Inverse of A:\n", np.linalg.inv(A))
+else:
+    print("A is not invertible")
+
+if np.linalg.det(B) != 0:
+    print("Inverse of B:\n", np.linalg.inv(B))
+else:
+    print("B is not invertible")
