@@ -1,0 +1,6 @@
+t = (1, 2, 3, 4)
+
+try:
+    t[0] = 16
+except TypeError as e:
+    print("Error msg:", e)
